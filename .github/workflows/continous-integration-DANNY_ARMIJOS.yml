@@ -23,4 +23,4 @@ jobs:
         run: cat credentials.ini
 
       - name: Build docker image
-        run: docker build -t devops_ws . --tag devops_ws:$(date +%s)
+        run: docker build -t devops_ws:$(date +%s) .
