@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+      - 'feature*'
+      - 'hotfix*'
 
 jobs:
   build:
@@ -21,7 +23,7 @@ jobs:
 
       - name: Mostrar contenido de credentials.ini
         run: cat credentials.ini
-        
+
       - name: Checkout repository
         uses: actions/checkout@v3
 
